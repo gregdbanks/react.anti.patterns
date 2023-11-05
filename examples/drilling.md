@@ -1,4 +1,4 @@
-![Prop Drilling](../propDrilling.mp4)
+![Prop Drilling](https://youtu.be/9gQutLF95Vo?si=i_a6in3RMM2JvkXR)
 
 
 <!-- 
