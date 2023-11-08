@@ -1,7 +1,5 @@
 [![Watch the video](https://img.youtube.com/vi/9gQutLF95Vo/hqdefault.jpg)](https://www.youtube.com/watch?v=9gQutLF95Vo)
 
-
-
 <!-- 
 ```js
 
