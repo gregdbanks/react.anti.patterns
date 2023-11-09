@@ -1,4 +1,6 @@
-## Forgetting to Debounce or Throttle:
+[![Watch the video](https://img.youtube.com/vi/9gQutLF95Vo/hqdefault.jpg)](https://youtu.be/izWiRHxsc_U)
+
+<!-- ## Forgetting to Debounce or Throttle:
 
 Suppose you have a component that performs a search whenever the user types into an input field. You might do something like this:
 
@@ -54,4 +56,4 @@ function ChillSearch() {
 }
 ```
 
-Now the API call won't be made until the user stops typing for 500ms. This is like only calling your friend to tell them the important bits about your cooking, not every single move you make. Much less annoying and far more efficient!
+Now the API call won't be made until the user stops typing for 500ms. This is like only calling your friend to tell them the important bits about your cooking, not every single move you make. Much less annoying and far more efficient! -->
