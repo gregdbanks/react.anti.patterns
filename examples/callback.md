@@ -1,51 +1,81 @@
-## Not Using the useCallback Hook" when it would be beneficial:
+[![Watch the video](https://img.youtube.com/vi/9gQutLF95Vo/hqdefault.jpg)](https://www.youtube.com/watch?v=LI5VbiGCCXk)
 
-Imagine you have a component that renders a child component with a very expensive (resource-intensive) operation. You're passing a callback to this child component and the child component uses this callback in its own useEffect. Now, every time the parent re-renders, the child component's useEffect is triggered because the parent's callback is recreated each time.
+<!-- Below we have the react anti-pattern of not using useCallBack fro expensive functions
 
 ```jsx
-function ExpensiveChildComponent({ callback }) {
+import React, { useState, useEffect, useCallback } from "react";
+
+// A spinner component to indicate an ongoing operation
+const Spinner = () => <div>Waiting...</div>;
+
+// A child component that accepts a callback
+const ChildComponent = ({ callback }) => {
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
-    // Some expensive operation
+    setLoading(true);
+    const timer = setTimeout(() => {
+      callback();
+      setLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
   }, [callback]);
 
-  // Rest of the component...
-}
+  return loading ? <Spinner /> : <div>Operation done!</div>;
+};
 
-function ParentComponent() {
+// The parent component without useCallback
+const ParentWithoutCallback = () => {
   const [value, setValue] = useState("");
 
   const callback = () => {
-    // do something
+    console.log("Operation performed without useCallback");
   };
 
   return (
     <div>
-      <ExpensiveChildComponent callback={callback} />
-      <input value={value} onChange={(event) => setValue(event.target.value)} />
+      <ChildComponent callback={callback} />
+      <input
+        value={value}
+        placeholder="Type here (without useCallback)"
+        onChange={(e) => setValue(e.target.value)}
+      />
     </div>
   );
-}
-```
+};
 
-This is like replacing the batteries in your remote every time you want to change the channel. It's unnecessary and wasteful!
-
-The solution here is to use the useCallback hook to memoize your callback so it doesn't get recreated on every render:
-
-```jsx
-function EfficientParentComponent() {
+// The parent component with useCallback
+const ParentWithCallback = () => {
   const [value, setValue] = useState("");
 
   const callback = useCallback(() => {
-    // do something
-  }, []); // Add any dependencies here
+    console.log("Operation performed with useCallback");
+  }, []);
 
   return (
     <div>
-      <ExpensiveChildComponent callback={callback} />
-      <input value={value} onChange={(event) => setValue(event.target.value)} />
+      <ChildComponent callback={callback} />
+      <input
+        value={value}
+        placeholder="Type here (with useCallback)"
+        onChange={(e) => setValue(e.target.value)}
+      />
     </div>
   );
-}
-```
+};
 
-Now your ExpensiveChildComponent won't perform its expensive operation every time ParentComponent re-renders. This is like getting a universal remote that never needs new batteries - much more efficient!
+// Main App component
+const App = () => {
+  return (
+    <div>
+      <h2>Without useCallback</h2>
+      <ParentWithoutCallback />
+      <h2>With useCallback</h2>
+      <ParentWithCallback />
+    </div>
+  );
+};
+
+export default App;
+``` -->
