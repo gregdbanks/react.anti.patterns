@@ -1,5 +1,7 @@
 [![Watch the video](https://img.youtube.com/vi/9gQutLF95Vo/hqdefault.jpg)](https://youtu.be/izWiRHxsc_U)
 
+[Click here for Codesandbox](https://codesandbox.io/s/debounce-qpmfrd)
+
 <!-- ## Forgetting to Debounce or Throttle:
 
 Suppose you have a component that performs a search whenever the user types into an input field. You might do something like this:

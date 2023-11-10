@@ -1,5 +1,7 @@
 [![Watch the video](https://img.youtube.com/vi/9gQutLF95Vo/hqdefault.jpg)](https://www.youtube.com/watch?v=LI5VbiGCCXk)
 
+[Click here for Codesandbox](https://codesandbox.io/s/callbacks-h4gt3c)
+
 <!-- Below we have the react anti-pattern of not using useCallBack fro expensive functions
 
 ```jsx

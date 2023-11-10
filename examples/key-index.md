@@ -1,4 +1,6 @@
 [![Watch the video](https://img.youtube.com/vi/9gQutLF95Vo/hqdefault.jpg)](https://www.youtube.com/watch?v=-xAETKXVfF4)
+
+[Click here for Codesandbox](https://codesandbox.io/s/index-as-key-7f85ls)
 <!-- ## Using Index as Key:
 
 Given the code snippet in codesandbox we have 2 list. One that uses index as key and the other name(unique, meaning no duplicate names)
