@@ -1,4 +1,10 @@
-## Overusing Refs:
+[![Watch the video](https://img.youtube.com/vi/9gQutLF95Vo/hqdefault.jpg)](https://youtu.be/XLSIUwuxpio)
+
+
+[Click here for Codesandbox](https://codesandbox.io/s/ref-rfj9rr)
+
+
+<!-- ## Overusing Refs:
 
 Refs are useful for many things, like accessing a DOM node directly, but some folks use them for everything under the sun. It's like using a chainsaw to cut your sandwich - sure, it can do the job, but it's probably not the best tool for it!
 
@@ -32,4 +38,4 @@ function JustRight() {
 
 Now handleNameChange updates the name state, and the input's value is stored in a place that makes sense. This is like hanging that picture with a small hammer - just right!
 
-Remember, refs are powerful, but they're not always the right tool for the job. Don't let the power go to your head!
+Remember, refs are powerful, but they're not always the right tool for the job. Don't let the power go to your head! -->
