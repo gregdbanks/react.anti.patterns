@@ -1,4 +1,8 @@
-## State Updates Too Frequently:
+[![Watch the video](https://img.youtube.com/vi/9gQutLF95Vo/hqdefault.jpg)](https://youtu.be/u4_uQB1LS0U)
+
+[Click here for Codesandbox](https://codesandbox.io/s/state-updates-tvhrs4)
+
+<!-- ## State Updates Too Frequently:
 
 This is like having an over-enthusiastic friend who calls you every time they find a new cat video. Sure, you love cats, but this is just too much!
 
@@ -34,4 +38,4 @@ function CalmComponent() {
 }
 ```
 
-Now setCount is called with a function that takes the latest count and returns count + 1. This way, all the updates are applied correctly, and your state is as calm as a zen master in a meadow.
+Now setCount is called with a function that takes the latest count and returns count + 1. This way, all the updates are applied correctly, and your state is as calm as a zen master in a meadow. -->
